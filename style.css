@@ -146,7 +146,7 @@ body {
 }
 @keyframes diagonal-slide {
   from {
-    left: 79%;
+    left: 100%;
     animation-timing-function: linear;
   }
 
