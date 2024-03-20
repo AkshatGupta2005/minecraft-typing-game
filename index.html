@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sky" id="sky">
+        <div class="scoreBoard">
+          Score&#160;<span class="liveScore"> </span>
+          <div class="mode">
+            <img
+              src="./images/light_mode_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="dayMode"
+              class="modeImg hidden dayMode"
+              id="modeChange"
+            />
+            <img
+              src="./images/night-mode.png"
+              alt="nightMode"
+              class="modeImg nightMode"
+              id="modeChange"
+            />
+          </div>
+          <div class="volume">
+            <img
+              src="./images/volume-up.svg"
+              alt="volumeOn"
+              class="volumeImg volumeOn hidden"
+            />
+            <img
+              src="./images/mute.png"
+              alt="volumeOff"
+              class="volumeImg volumeOff"
+            />
+          </div>
+          <select id="difficulty" class="difficultyLevel">
+            <option value="kid">Kid Level</option>
+            <option value="easy">Easy Level</option>
+            <option value="normal">Normal Level</option>
+            <option value="hard">Hard Level</option>
+            <option value="extreme">Extreme Level</option>
+            <option value="impossible">Impossible Level</option>
+          </select>
+        </div>
+        <div class="clouds" id="clouds"></div>
+        <div class="sun"></div>
+      </div>
+      <div class="ground" id="">
+        <span class="letterBox" id="letterBox">Press Any Key To Start</span
+        ><img
+          src="./images/Untitled design (1).png"
+          alt="grassBlock"
+          class="grass"
+        />
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

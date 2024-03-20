@@ -1,0 +1,153 @@
+@font-face {
+  font-family: minecraft;
+  src: url("./MinecraftRegular-Bmg3.otf");
+}
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.sky {
+  width: 100%;
+  height: 70%;
+  background-color: #87ceeb;
+}
+.ground {
+  position: relative;
+  height: 30%;
+  background-color: green;
+}
+.cloudImg {
+  filter: brightness(0.1) invert(1);
+  position: relative;
+  height: 100%;
+}
+.cloud {
+  position: absolute;
+  height: 15%;
+  animation-name: diagonal-slide;
+  object-fit: contain;
+  font-family: "minecraft", sans-serif;
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+.scoreBoard {
+  height: 9%;
+  font-size: 1.8em;
+  padding: 0.4em 0.4em 0em 0.4em;
+  font-family: "minecraft", sans-serif;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.clouds {
+  height: 90%;
+}
+.randomLetter {
+  position: absolute;
+  left: 45%;
+  bottom: 45%;
+}
+.ground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letterBox {
+  position: absolute;
+  font-family: "minecraft", sans-serif;
+  font-size: 3.3em;
+  color: #fce570;
+  z-index: 1;
+}
+.screenBlur {
+  opacity: 15%;
+}
+.grass {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sun {
+  position: absolute;
+  background-color: #fce570;
+  top: 18%;
+  left: 60%;
+  width: 10em;
+  height: 10em;
+}
+.difficultyLevel {
+  height: 100%;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 60%;
+  font-family: "minecraft", sans-serif;
+  background-color: #aaaaaa;
+  color: white;
+  border: 0px;
+}
+.volume {
+  height: 100%;
+  background-color: #aaaaaa;
+  margin-right: 4px;
+  border-radius: 9px;
+}
+.volumeOff {
+  object-fit: cover;
+}
+.mode {
+  height: 100%;
+  background-color: #aaaaaa;
+  margin-left: auto;
+  margin-right: 4px;
+  border-radius: 9px;
+}
+.modeImg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.1) invert(1);
+}
+.volumeImg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.1) invert(1);
+}
+.hidden {
+  display: none;
+}
+.moon {
+  position: absolute;
+  background-color: whitesmoke;
+  top: 18%;
+  left: 60%;
+  width: 10em;
+  height: 10em;
+}
+.night {
+  background-color: #35374b;
+}
+.gameOver {
+  background-color: #ff5555;
+}
+@keyframes diagonal-slide {
+  from {
+    left: 79%;
+    animation-timing-function: linear;
+  }
+
+  to {
+    left: 0%;
+  }
+}
